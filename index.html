@@ -2,400 +2,85 @@
 <html lang="en">
 
 <head>
-	<!-- 페이지 기본 메타 설정 -->
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- 파비콘 설정 -->
-	<link rel="shortcut icon" href="favicon.ico?">
-
-	<!-- CSS, Js 파일 읽어오기 -->
-	<link rel="stylesheet" href="/css/main.css">
-	<link rel="stylesheet" href="/css/about.css">
-	<link rel="stylesheet" href="/css/skills.css">
-	<link rel="stylesheet" href="/css/portfolio.css">
-	<link rel="stylesheet" href="/css/contact.css">
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-	<script type="text/javascript" src="/Script/main.js"></script>
-
-	<!-- 사이트 이름 설정 -->
-	<title>KCB's Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="sakura.css">
+    <title>Document</title>
 </head>
 
-<!-- HTML 시작 -->
-<!-- 폰트 설정 -->
-<body class="BoldFont">
+<body oncontextmenu='return false' onselectstart='return false' ondragstart='return false'>
+    <div class="circle">
+        <img src="Images/gitlab.png" alt="fllow_img">
+    </div>
 
-<!-- 헤더 설정 (상단 메뉴바) -->
-<header style="z-index: 100;">
-	<nav class="menu" style="display: block; text-align: center;">
-		<li><a id="Menu_Main" href="#Main">Home</a></li>
-		<li><a id="Menu_About" href="#About">About</a></li>
-		<li><a id="Menu_History" href="#Skills">Skills</a></li>
-		<li><a id="Menu_PortFolio" href="#Portfolio">Portfolio</a></li>
-		<li><a id="Menu_Contact" href="#Contact">Contact</a></li>
-	</nav>
-</header>
-<!-- <svg class="sky"></svg>
-<script type="text/javascript" src="/Script/backstart.js"></script> -->
+    <nav>
+        <div style="display: block; text-align: center; margin: 0; padding-bottom: 20px; background-color: #0e0325;">
+            <img src="Images/Logo.jpg" width="100%">
+            <span style="color: gainsboro; font-size: 15px; padding-top: -100px;">Software <br> Developer</span>
+        </div>
 
-	<!-- 1번 섹션 (최상단 메인 페이지) -->
-	<div id="Main" class="section section1">
-		<img id="cen_img" class="starback">
-		<p>
-			KCB's PortFolio<br>
-			<span class="typing1" style="font-size: 50%; line-height: 70%;">"훌륭한 코드는 훌륭한 문서보다 낫다"</span>
-			<span style="font-size: 40%; line-height: 70%;"><br>소프트웨어 엔지니어, 김찬빈입니다. </span>
-		</p>
-	</div>
-	
-	<!-- 2번 섹션 (About 페이지) -->
-	<div id="About" class="section section_base"
-		style="justify-content: center; align-items: center;">
-		<section class="about" style="display: block">
-			<p class="about" id="about" style="margin-top: -150px; font-size: 120%; color:rgb(1, 27, 16);">
-				<h2 class="title">About</h2>
-			</p>
-			<p style="display: flex;">
-				<img src="/Images/Profile.jpg" style="border-radius: 10%; width: 280px; height: 280px;">
-				<span style="margin-left: 45px; text-align: left; line-height: 25px;">
-					<br>"창의성은 불확실에 도전하는 것"
-					<sub style="font-size: 50%; color: grey;">- 빌로퍼 (개발자)</sub><br><br>
-					<span style="font-size: 65%; line-height: 12px;" class="NormalFont">
-						직접 만든 게임을 다른 사용자가 플레이하면서 즐거워하는 것을 보고,<br>
-						더불어 프로그램을 만드는것이 즐겁다 느끼며 개발자를 꿈꾸게 되었습니다.
-						<br><br>
-						멈춰있지 않고, VR과 AR, 안드로이드와 PC를 넘어, <br>
-						모든 사용자분들에게 좋은 영향을 줄 수 있는 개발자가 제 목표입니다.
-					</span>
-					<br><br>
-					<a href="https://github.com/Noonsom">
-						<img src="/Images/GitHub.png" style="width: 50px; height: 50px;"></a>
-					<a href="https://devbini.tistory.com">
-						<img src="/Images/Tistory.png" style="width: 50px; height: 50px; margin-left: 5%;"></a>
-					<a href="mailto:cong8685@naver.com">
-						<img src="/Images/Email.png" style="width: 50px; height: 50px; margin-left: 5%;"></a>		
-				</span>
-			</p>
-		</section>
-	</div>
+        <ul class="mainmenu" style="margin-top: 100%;">
+            <a href="#About">About</a>
+            <a href="#Skill">Skill</a>
+            <a href="#Project">Project</a>
+            <a href="#Contect">Contect</a>
+        </ul>
 
-	<!-- 3번 섹션 (Skills 페이지) -->
-	<div id="Skills" class="section section_base"
-	style="justify-content: center; align-items: center;">
-		<section class="skills" style="display: block">
-			<p class="skills" id="skills" style="margin-top: -100px; font-size: 120%; color:rgb(1, 27, 16);">
-				<h2 class="title">Skills</h2>
-			</p>
+        <div style="margin-top: 100%; width: 100%; align-items: center; text-align: center;">
+            <a href="https://github.com/Noonsom" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="#FFFFFF" viewBox="0 0 30 30" width="50px" height="50px">
+                    <path
+                        d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z" />
+                </svg>
+            </a>
+        </div>
+    </nav>
 
-			<a style="display: flex; margin-top: -3%; line-height: 50px;">
-				<p style="display: block; 
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/C_Language.png" style="width: 100px; height: 113px;"><br>
-					C<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						알고리즘, 데이터 입출력 관리 등 사용 </span>
-				</p>
-				<p style="display: block;
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/CPlus_Language.png" style="width: 100px; height: 113px;"><br>
-					C++ [Main]<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						언리얼 코드활용 개발, 포인터, 최적화 등 사용 </span>
-				</p>
-				<p style="display: block; 
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/CSharp_Language.png" style="width: 100px; height: 113px;"><br>
-					C#<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						유니티 코드활용 개발, 쉐이더 스크립팅 등 사용 </span>
-				</p>
-			</a>
-			<br>
-			<a style="display: flex; margin-top: -3%; line-height: 50px;">
-				<p style="display: block; 
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/Git.png" style="width: 100px; height: 100px;"><br>
-					Git<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						프로젝트 관리, 코드 기록 및 marge, branch 등 사용 </span>
-				</p>
-				<p style="display: block;
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/Unreal_Engine.png" style="width: 100px; height: 100px;"><br>
-					Unreal Engine<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						VR AR, 디지털 트윈 콘텐츠 개발 </span>
-				</p>
-				<p style="display: block; 
-				width: 400px; font-size: 80%;">
-					<img src="/Images/Skills/Unity_Engine.png" style="width: 100px; height: 113px;"><br>
-					Unity Engine<br>
-					<span class="NormalFont" style="font-size: 60%;">
-						시뮬레이터, QR 생성기 등 프로그램 개발 </span>
-				</p>
-			</a>
-		</section>
-	</div>
-
-	<!-- 3번 섹션 (PortFolio 페이지) -->
-	<div id="Portfolio" class="section section_base" style="justify-content: center; align-items: center;">
-		<section class="portfolio" style="display: block">
-			<p class="portfolio" id="portfolio" style="margin-top: -20px; font-size: 120%; color:rgb(1, 27, 16);">
-			<h2 class="title">PortFolio</h2>
-			</p>
-
-			<section class="swiper mySwiper whiteborder">
-				<section class="swiper-wrapper">
-
-					<!-- 1번 슬라이드 부분 [경관심의]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>비대면 경관심의 심사 프로그램</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"> </p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px;"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								국토교통부 주최, 디지털 트윈 기술을 적용한 3차원 플랫폼을 구축,<br>
-								경관심의를 비대면으로 실시할 수 있는 프로그램을 개발하였습니다.</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 1개월 (2020.09 ~ 2020.10)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 엔진 :: Unreal Engine 4</span>
-							<span class="iconify" data-icon="simple-icons:unrealengine" style="margin-left: 10px; "></span>
-							<span class="iconify" data-icon="vscode-icons:file-type-cpp3"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 3인 [개발자 1인, 기획자 1인, 디자이너 1인]</span><br><br>
-	
-							<span class="iconify" data-icon="emojione-v1:newspaper"></span>
-							<span style="font-size: 80%;"> 관련 자료 ::
-								<span class="hyperlink" onclick="location.href='https://noonsom.github.io/Images/Portfolio/crape.jpg'" target="_blank">우수상 입상,</span> 
-								<span class="hyperlink" onclick="location.href='http://www.molit.go.kr/USR/NEWS/m_71/dtl.jsp?id=95084664'" target="_blank">관련 보도자료 </span>
-							</span>
-						</p>
-					</a>
-
-					<!-- 2번 슬라이드 부분 [측량장비]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>측량 장비 교육 시뮬레이터</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"></p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								비대면 교육 활성화와 VR을 활용한 교과수업 지원 프로그램으로,<br>
-								VR 측량 실습 및 영상 교육 시뮬레이터를 개발하였습니다.</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 6개월 (2021.12 ~ 2022.06)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 엔진 :: Unreal Engine 4</span>
-							<span class="iconify" data-icon="simple-icons:unrealengine" style="margin-left: 10px;"></span>
-							<span class="iconify" data-icon="vscode-icons:file-type-cpp3"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 4인 [개발자 1인, 기획자 1인, 디자이너 2인]</span><br><br>
-	
-							<span class="iconify" data-icon="emojione-v1:newspaper"></span>
-							<span class="normaltext"> 관련 자료 ::
-							<span class="hyperlink" onclick="location.href='https://www.ksce.or.kr/peri/journal.asp'" target="_blank"> 대한토목학회지 수록 (7월) </span>
-							</span>
-						</p>
-					</a>
-					
-					<!-- 3번 슬라이드 부분 [항만정비]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>항만 장비 정비점검 시뮬레이터</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"> </p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px;"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								항만 장비의 정비점검을 가상으로 시험 및 관리할 수 있는 프로그램으로,<br>
-								VR과 AR, 운용 플랫폼 및 기계정비 시뮬레이터를 개발하였습니다.</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 1년 9개월 (2020.05 ~ 2022.02)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 엔진 :: Unity Engine</span>
-							<span class="iconify" data-icon="bi:unity" style="margin-left: 10px;"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 4인 [개발자 1인, 기획자 1인, 디자이너 2인]</span><br><br>
-	
-							</span>
-						</p>
-					</a>
-
-					<!-- 4번 슬라이드 부분 [3기신도시]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>LH 3기신도시 디지털 트윈</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"> </p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px;"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								3기신도시 홍보관에 설치되어, 미리 3기 신도시를 체험할 수 있고.<br>
-								터치스크린 동작 및 모든 로직을 개발하였습니다.</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 3개월 (2021.10 ~ 2022.01)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 엔진 :: Unreal Engine 4</span>
-							<span class="iconify" data-icon="simple-icons:unrealengine" style="margin-left: 10px;"></span>
-							<span class="iconify" data-icon="vscode-icons:file-type-cpp3"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 4인 [개발자 1인, 기획자 1인, 디자이너 2인]</span><br><br>
-	
-							<span class="iconify" data-icon="emojione-v1:newspaper"></span>
-							<span class="normaltext"> 관련 자료 ::
-							<span class="hyperlink" onclick="location.href='https://www.xn--3-3u6ey6lv7rsa.kr/'" target="_blank">3기신도시 홈페이지,</span>
-							<span class="hyperlink" onclick="location.href='https://youtu.be/CEFawkPgCCQ?t=154'" target="_blank">남양주왕숙 VR 투어</span><br>
-							<span class="hyperlink" onclick="location.href='https://youtu.be/kDPpZWRZAbI?t=198'" target="_blank">인천계양 VR 투어</span>
-							</span>
-						</p>
-					</a>
-
-					<!-- 5번 슬라이드 부분 [포트폴리오 사이트]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>개인 포트폴리오 웹</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"></p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px;"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								소프트웨어를 다루지만, 저만의 사이트 하나를 만드는게 어떨까? 싶어<br>
-								HTML 공부를 병행하며 만들어본 사이트입니다. (현재 사이트)</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 1개월 (2022.07 ~ 2022.07)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 언어 :: HTML, CSS, JS</span>
-							<span class="iconify" data-icon="logos:html-5" style="margin-left: 10px;"></span>
-							<span class="iconify" data-icon="logos:css-3"></span>
-							<span class="iconify" data-icon="vscode-icons:file-type-js-official"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 1인 </span><br><br>
-						
-							<span class="iconify" data-icon="emojione-v1:newspaper"></span>
-							<span class="normaltext"> 관련 자료 ::
-							<span class="hyperlink" onclick="location.href='https://github.com/Noonsom/Noonsom.github.io'" target="_blank">소스코드</span>
-							</span>
-						</p>
-					</a>
-
-					<!-- 6번 슬라이드 부분 [QR코드 생성기]-->
-					<a class="swiper-slide" style="display: block; text-align: center; align-content: center;">
-						<p class="titlename"><b>QR 생성기</b>
-						</p>
-						<p style="align-items: center; justify-content: center; width: 100%; height: 5px; background-color: rgb(4, 61, 114); margin-top: -10px; margin-bottom: 30px;"></p>
-						<p>
-							<iframe class="youtubesize" src="https://www.youtube.com/embed/r-182lYSzFo"
-								title="YouTube video player" frameborder="0"
-								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-								allowfullscreen style="border-radius: 10px;"></iframe>
-						</p>
-						<p class="textboxalign">
-							<span class="iconify" data-icon="flat-color-icons:start" style="width: 30px; height: 30px;"></span>
-							<span class="titletext"> 프로젝트 개요<br></span><span class="normaltext">
-								회사 프로젝트 진행 중 특정 값이 들어간 QR 코드가 필요한 경우가 있어,<br>
-								ZXing 오픈소스를 이용하여 생성할 수 있는 프로그램을 제작하였습니다.</span><br><br>
-	
-							<span class="iconify" data-icon="uil:calender"></span>
-							<span class="normaltext"> 개발 기간 :: 2일 (2020.12)</span><br>
-	
-							<span class="iconify" data-icon="emojione-v1:laptop-computer"></span>
-							<span class="normaltext"> 개발 엔진 :: Unity Engine</span>
-							<span class="iconify" data-icon="bi:unity" style="margin-left: 10px;"></span><br>
-	
-							<span class="iconify" data-icon="fluent:people-team-16-filled"></span>
-							<span class="normaltext"> 개발 인원 :: 1인 </span><br><br>
-						
-							<span class="iconify" data-icon="emojione-v1:newspaper"></span>
-							<span class="normaltext"> 관련 자료 ::
-							<span class="hyperlink" onclick="location.href='https://github.com/Noonsom/QR_Creator'" target="_blank">소스코드</span>
-							</span>
-						</p>
-					</a>
-				</section>
-				<section class="swiper-button-next"></section>
-				<section class="swiper-button-prev"></section>
-				<section class="swiper-pagination"></section>
-			</section>
-
-		</section>
-	
-		</section>
-	
-	
-	</div>
-	<!-- 5번 섹션 (Contact 페이지) -->
-	<div id="Contact" class="section section_base"
-	style="justify-content: center; align-items: center;">
-		<section class="contact" style="display: block">
-			<p class="contact" id="contact" style="margin-top: -100px; font-size: 120%; color:rgb(1, 27, 16);">
-				<h2 class="title">Contact</h2>
-			</p>
-		</section>
-	</div>
-
-	<script>
-		var swiper = new Swiper(".mySwiper", {
-			slidesPerView: 1,
-			spaceBetween: 30,
-			loop: true,
-			pagination: {
-				el: ".swiper-pagination",
-				clickable: true,
-			},
-			navigation: {
-				nextEl: ".swiper-button-next",
-				prevEl: ".swiper-button-prev",
-			},
-		});
-	</script>
+    <div class="mainsection">
+        <div>
+            <section class="page" style="
+            background-image: url('/Images/BackGround.png');
+            background-repeat : no-repeat;
+            background-size : cover;">
+                <div class="textzone" style="font-size: 50px;">
+                    <p>
+                        <span>안녕하세요,</span><br>
+                        <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
+                        <span>김찬빈입니다.</span>
+                    </p>
+                    <p style="font-size: 20px;">
+                        <span>Software Developer | Unrael Engineer</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div>
+            <section class="page">
+                <div class="textzone" style="font-size: 50px;">
+                    <p>
+                        <span>안녕하세요,</span><br>
+                        <span>저는</span>
+                        <span style="color: aquamarine;">소프트웨어</span>
+                        <span>를 개발하는</span><br>
+                        <span>김찬빈입니다.</span>
+                    </p>
+                    <p style="font-size: 20px;">
+                        <span>Software Developer | Unrael Engineer</span>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="Script.js"></script>
+    <script>
+        $(window).load(function () {
+            $('body').sakura();
+        });
+    </script>
 </body>
 
 </html>
