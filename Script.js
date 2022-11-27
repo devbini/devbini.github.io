@@ -18,22 +18,27 @@ function SwitchPage(type) {
     switch (type) {
         case 0: // 메인화면 클릭
             document.getElementById("MainPage").classList.add("ZUP");
+            document.getElementById("MainPage").classList.remove("HidePage");
             break;
 
         case 1: // About 클릭
             document.getElementById("About").classList.add("ZUP");
+            document.getElementById("About").classList.remove("HidePage");
             break;
 
         case 2: // Skills 클릭
             document.getElementById("Skills").classList.add("ZUP");
+            document.getElementById("Skills").classList.remove("HidePage");
             break;
 
         case 3: // Project 클릭
             document.getElementById("Project").classList.add("ZUP");
+            document.getElementById("Project").classList.remove("HidePage");
             break;
 
         case 4: // Contect 클릭
             document.getElementById("Contect").classList.add("ZUP");
+            document.getElementById("Contect").classList.remove("HidePage");
             break;
         }
 }
@@ -46,6 +51,12 @@ function move(type) {
     .then(() => document.getElementById("Skills").classList.remove("ZUP"))
     .then(() => document.getElementById("Project").classList.remove("ZUP"))
     .then(() => document.getElementById("Contect").classList.remove("ZUP"))
+    
+    .then(() => document.getElementById("MainPage").classList.add("HidePage"))
+    .then(() => document.getElementById("About").classList.add("HidePage"))
+    .then(() => document.getElementById("Skills").classList.add("HidePage"))
+    .then(() => document.getElementById("Project").classList.add("HidePage"))
+    .then(() => document.getElementById("Contect").classList.add("HidePage"))
     .then(() => SwitchPage(type));
 
     sleep(2000).then(() => document.querySelector(".divpage").classList.remove("move"));

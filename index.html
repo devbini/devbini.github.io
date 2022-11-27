@@ -46,7 +46,7 @@
 
     <!-- 메인 화면 페이지 요소입니다. -->
     <div class="mainsection">
-        <div class="divpage">
+        <div class="divpage" style="position: fixed;">
             <div class="loading-container">
                 <div class="loading"></div>
                 <div id="loading-text">loading</div>
@@ -71,28 +71,67 @@
         </div>
 
         <!-- About 페이지 요소입니다. -->
-        <div class="sections" id="About">
+        <div class="sections HidePage" id="About">
             <section class="page" style="
             background-image: url('/Images/BackGround.png');
             background-repeat : no-repeat;
             background-size : cover;">
-            <div style="width: 100vw; height: 100vh; background-image: none; background-color: white; position: absolute; transform: translateY(22%); z-index: 4;"></div>
-            <img src="Images/Profile.png" style="z-index: 5;">
-                <div class="textzone" style="position: absolute; font-size: 50px; vertical-align: middle;">
-                    <p style="margin-top: 15%;">
-                        <span>About,</span><br>
-                        <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
-                        <span>김찬빈입니다.</span>
+            <img src="./Images/Profile2.png" style="width: 372px; height: 372px; position: absolute; top: 30px; left: 100px; z-index: 10;">
+
+            <p style="position: absolute; color: white; font-size: 47px; left: 35%; top: 18%; z-index: 11;">"노력은 수단이 아닌 목적이다"</p>
+            <div class="textzone" style="position: absolute; z-index: 11; top: 10%; left: 3%;">
+                <p style="margin-top: 10%; font-size: 29px; line-height: 45px;">
+                    <span>안녕하세요,</span><br>
+                    <span>삶의 활력이 되는 프로그램을 만들고 싶은, </span><br>
+                    <span>개발 자체를 즐기는 소프트웨어 개발자,</span><br>
+                    <span>김찬빈입니다.</span>
+                </p>
+                <p style="margin-top: 9%; font-size: 29px; line-height: 45px;">
+                    <span>지금에 안주하지 않고,</span><br>
+                    <span>더 많은 사람들에게 즐거운 영향을 미치는</span><br>
+                    <span>개발자가 되기 위해 정진하고 있습니다!</span>
+                </p>
+            </div>                
+            <div style="background-color: #19094f; height: 85.5vh; width: 100vw; transform: translateY(14.5vh);">
+                <div style="background-color: #0e0325; height: 93%; width: 88%; border-radius: 3%; top: 3.5%; left: 1.5%; position: absolute;"> </div>
+                <div style="background-color: #000000; position: absolute; transform: translate(38vw, 20vh); width: 950px; height: 600px; border-radius: 10%;">
+                    <img src="./Images/CPP.png" style="position: absolute; width: 138px; height: 156px; transform: translate(150px, 50px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(145px, 205px);"> 
+                        <span>[C++]</span><br>
+                        <span>언리얼엔진<br>알고리즘 활용 가능</span>
                     </p>
-                    <p style="font-size: 20px;">
-                        <span>Software Developer | Unrael Engineer</span>
+                    <img src="./Images/CS.png" style="position: absolute; width: 156px; height: 156px; transform: translate(400px, 50px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(415px, 205px);"> 
+                        <span>[C#]</span><br>
+                        <span>유니티 엔진<br>MFC 활용 가능</span>
                     </p>
-                </div>
+                    <img src="./Images/js.png" style="position: absolute; width: 131px; height: 148px; transform: translate(665px, 50px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(635px, 205px);"> 
+                        <span>[JavaScript]</span><br>
+                        <span>CSS, HTML 연계 가능<br>간단한 함수 조작 가능</span>
+                    </p>
+                    <img src="./Images/UE.png" style="position: absolute; width: 144px; height: 143px; transform: translate(150px, 330px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(130px, 475px);"> 
+                        <span>[Unreal Engine]</span><br>
+                        <span>VR, AR, MR 활용 가능<br>시뮬레이터 등 3년 경력</span>
+                    </p>
+                    <img src="./Images/Unity.png" style="position: absolute; width: 142px; height: 160px; transform: translate(410px, 320px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(405px, 475px);"> 
+                        <span>[Unity Engine]</span><br>
+                        <span>VR, AR 개발 경험<br>SQL 서버 연결 경험</span>
+                    </p>
+                    <img src="./Images/git.png" style="position: absolute; width: 158px; height: 158px; transform: translate(650px, 320px);">
+                    <p style="text-align: center; color: white; position: absolute; z-index: 11; font-size: 20px; transform: translate(650px, 475px);"> 
+                        <span>[Git]</span><br>
+                        <span>버전 / 스택관리 능력<br>협업 툴 사용능력</span>
+                    </p>
+                </div>    
+            </div>
             </section>
         </div>
 
         <!-- Skills 페이지 요소입니다. -->
-        <div class="sections" id="Skills">
+        <div class="sections HidePage" id="Skills">
             <section class="page" style="
             background-image: url('/Images/BackGround.png');
             background-repeat : no-repeat;
@@ -111,7 +150,7 @@
         </div>
 
         <!-- Project 페이지 요소입니다. -->
-        <div class="sections" id="Project">
+        <div class="sections HidePage" id="Project">
             <section class="page" style="
             background-image: url('/Images/BackGround.png');
             background-repeat : no-repeat;
@@ -130,7 +169,7 @@
         </div>
 
         <!-- Contect 페이지 요소입니다. -->
-        <div class="sections" id="Contect">
+        <div class="sections HidePage" id="Contect">
             <section class="page" style="
             background-image: url('/Images/BackGround.png');
             background-repeat : no-repeat;
