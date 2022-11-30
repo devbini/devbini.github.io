@@ -29,9 +29,8 @@
 
         <ul class="mainmenu" style="margin-top: 100%;">
             <a onclick="move(1)">About</a>
-            <a onclick="move(2)">Skill</a>
-            <a onclick="move(3)">Project</a=>
-                <a onclick="move(4)">Contect</a>
+            <a onclick="move(2)">Project</a=>
+            <a onclick="move(3)">Contect</a>
         </ul>
 
         <div style="margin-top: 100%; width: 100%; align-items: center; text-align: center;">
@@ -46,7 +45,7 @@
 
     <!-- 메인 화면 페이지 요소입니다. -->
     <div class="mainsection">
-        <div class="divpage" style="position: fixed;">
+        <div class="divpage" style="position: fixed; pointer-events: none;">
             <div class="loading-container">
                 <div class="loading"></div>
                 <div id="loading-text">loading</div>
@@ -130,25 +129,6 @@
             </section>
         </div>
 
-        <!-- Skills 페이지 요소입니다. -->
-        <div class="sections HidePage" id="Skills">
-            <section class="page" style="
-            background-image: url('/Images/BackGround.png');
-            background-repeat : no-repeat;
-            background-size : cover;">
-                <div class="textzone" style="position: absolute; font-size: 50px; vertical-align: middle;">
-                    <p style="margin-top: 15%;">
-                        <span>Skills,</span><br>
-                        <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
-                        <span>김찬빈입니다.</span>
-                    </p>
-                    <p style="font-size: 20px;">
-                        <span>Software Developer | Unrael Engineer</span>
-                    </p>
-                </div>
-            </section>
-        </div>
-
         <!-- Project 페이지 요소입니다. -->
         <div class="sections HidePage" id="Project">
             <section class="page" style="
@@ -174,11 +154,16 @@
             background-image: url('/Images/BackGround.png');
             background-repeat : no-repeat;
             background-size : cover;">
-                <div class="textzone" style="position: absolute; font-size: 50px; vertical-align: middle;">
+            <div style="background-color: #0e0325; height: 93%; width: 88%; border-radius: 3%; top: 3.5%; left: 1.5%; position: absolute;"> </div>
+            <div style="background-color: rgb(255, 253, 231); height: 80%; width: 30%; border-radius: 3%; top: 3%; left: 50%; position: absolute;">
+                <p> FEEDBACK FORM <br>
+                    <span>제목 : <input type="text" id="NameID" name="name" required minlength="1" maxlength="40" size="20" style="border: 0 solid black;"></span>
+                    <span>내용 <textarea></textarea></span>        
+                </p>
+            </div>
+            <div class="textzone" style="position: absolute; font-size: 50px; vertical-align: middle;">
                     <p style="margin-top: 15%;">
-                        <span>Contect,</span><br>
-                        <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
-                        <span>김찬빈입니다.</span>
+                        <span>Contect us</span><br>
                     </p>
                     <p style="font-size: 20px;">
                         <span>Software Developer | Unrael Engineer</span>
