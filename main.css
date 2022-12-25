@@ -23,47 +23,50 @@ body {
 nav {
     z-index: 1000;
     width: 10rem;
-    background-color: #a8dba8;
+    /* background-color: #a8dba8; */
     /* background-color: rgb(20, 4, 56);
     border-right: 1px solid #ddd; */
 
     font-family: "Chosun";
 
     position: fixed;
-    height: 100%
+    width: 100%;
+    height: 10%;
+    /* height: 100% */
 }
 
 .mainmenu {
     /* vertical-align: middle; */
-    text-align: center;
+    /* text-align: center; */
+    display: inline-block;
     margin: 0%;
     padding: 0%;
 }
 
 /*메뉴*/
 .mainmenu a {
-    height: 50px;
-    line-height: 50px;
-    display: block;
-    font-size: 15px;
-    color: #658072;
+    /* height: 50px;
+    line-height: 50px; */
+    display: inline-block;
+    font-size: 23px;
+    color: white;
 
     padding: 0px;
-    margin: 0px;
+    margin: 0% 1% 0% 0%;
     /*border-top: 3px solid #79bd9a;*/
-    border-bottom: 3px solid #79bd9a;
+    /* border-bottom: 3px solid #79bd9a; */
     text-decoration-line: none;
 
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     cursor:pointer;
 }
 
 .mainmenu a:hover {
-    background-color: #79bd9a;
-    color: #2a4738;
+    /* background-color: #79bd9a; */
+    color: rgb(170, 252, 170);
 }
 
 .mainsection {
-    padding-left: 10rem;
     width: 100vw;
     height: 100vh;
     box-sizing: border-box;

@@ -18,18 +18,19 @@
 
     <!-- 좌측 메인 메뉴 탭입니다. -->
     <nav>
-        <div style="display: block; text-align: center; margin: 0; margin-top: 10%; padding-bottom: 20px; 
-        background-color: #afd4af; border-bottom: 3px solid #79bd9a;">
-            <img src="Images/Logo_Page.png" width="80%" style="margin: 5%; cursor:pointer;" onclick="move(0)">
-            <span style="color: #576d62; font-size: 15px; padding-top: -100px;">Software <br> Developer</span>
+        <div style="display: inline-block; width: 100%; margin: 2% 0% 0% 2.5%; ">
+            <img src="Images/Logo_Page.png" width="7%" style="cursor:pointer;" onclick="move(0)">
+            <!-- <span style="color: #576d62; font-size: 15px;">Software <br> Developer</span> -->
+
+            <ul class="mainmenu" style="width: 100%; position: absolute; transform: translate(3%, 230%); ">
+                <!-- margin-top: 100%;"> -->
+                    <a onclick="move(1)">About</a>
+                    <a onclick="move(2)">Project</a>
+                    <a onclick="move(3)">Contect</a>
+                </ul>
         </div>
 
-        <ul class="mainmenu" style="margin-top: 100%; border-top: 3px solid #79bd9a;">
-        <!-- margin-top: 100%;"> -->
-            <a onclick="move(1)">About</a>
-            <a onclick="move(2)">Project</a=>
-            <a onclick="move(3)">Contect</a>
-        </ul>
+
 
         <div style="margin-top: 10%; width: 100%; align-items: center; text-align: center;">
             <a href="https://github.com/Noonsom" target="_blank">
@@ -50,7 +51,7 @@
             </div>
         </div>
         <div class="sections ZUP" id="MainPage">
-            <section class="page" style="
+            <section id="background" class="page" style="
             background-image: url('/Images/BackGround2.png');
             background-repeat : no-repeat;
             background-size : cover;">
@@ -174,6 +175,7 @@
     <!-- J쿼리 입력 및 스크립트 호출 부분입니다 -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="Script.js"></script>
+    <script type="text/javascript" src="test.js"></script>
     <!-- 윈도우 로드 시 사쿠라를 재생합니다. (벚꽃 떨어지는 이펙트) -->
     <script>
         $(window).load(function () {
