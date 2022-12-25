@@ -3,6 +3,10 @@
     font-family: "netmarble";
 }
 
+@font-face {
+    src: url("/Fonts/ChosunBg.TTF");
+    font-family: "Chosun";
+}
 
 /* 페이지 여백 지우기 */
 html,
@@ -19,17 +23,20 @@ body {
 nav {
     z-index: 1000;
     width: 10rem;
-    background-color: rgb(20, 4, 56);
-    /*border-right: 1px solid #ddd;*/
+    background-color: #a8dba8;
+    /* background-color: rgb(20, 4, 56);
+    border-right: 1px solid #ddd; */
+
+    font-family: "Chosun";
 
     position: fixed;
     height: 100%
 }
 
 .mainmenu {
-    vertical-align: middle;
+    /* vertical-align: middle; */
     text-align: center;
-
+    margin: 0%;
     padding: 0%;
 }
 
@@ -39,20 +46,20 @@ nav {
     line-height: 50px;
     display: block;
     font-size: 15px;
-    color: white;
+    color: #658072;
 
     padding: 0px;
     margin: 0px;
-    border-top: 1px solid #4d4068;
-    border-bottom: 1px solid #4d4068;
+    /*border-top: 3px solid #79bd9a;*/
+    border-bottom: 3px solid #79bd9a;
     text-decoration-line: none;
 
     cursor:pointer;
 }
 
 .mainmenu a:hover {
-    background-color: rgb(50, 99, 205);
-    color: white;
+    background-color: #79bd9a;
+    color: #2a4738;
 }
 
 .mainsection {
@@ -89,25 +96,3 @@ nav {
 .sections {
     position: absolute;
 }
-
-
-.fade {
-    width: 100vw;
-    height: 100vh;
-    z-index: -9;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.5%;
-}
-
-.circle {
-    position: absolute;
-    box-sizing: border-box;
-}
-
-.circle img {
-    z-index: 20;
-    width: 30px;
-    height: 30px;
-    transform: translate(-50%, -60%);
-}
-
