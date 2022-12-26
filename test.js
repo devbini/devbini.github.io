@@ -6,24 +6,24 @@ ObjectArray[2] = "/Images/BackGround2.png";
 
 var nObjectCnt = 0;	
 
-
-
 function ShowDefaultRotate() // 스스로 자신을 호출하는 재귀함수 (Recursive Function)
 {
-	nObjectCnt++;
-
-	if( nObjectCnt < ObjectArray.length )  // 배열의 갯수 이내일때만 실행
+	console.log("TEST");
+	document.getElementById("background").style.backgroundRepeat = "no-repeat";
+	document.getElementById("background").style.backgroundSize = "cover";		 
+	
+	if ( nObjectCnt == 1 ) 
 	{
-		document.getElementById("background").style.backgroundImage = "url(" + ObjectArray[nObjectCnt] + ")";
-        document.getElementById("background").style.backgroundRepeat = "no-repeat";
-        document.getElementById("background").style.backgroundSize = "cover";		 
-		obTimeOut = setTimeout("ShowDefaultRotate()",60000);  // 1초후에 자기자신을 호출 
+		document.getElementById("background").style.backgroundImage = "url(" + ObjectArray[1] + ")";
+		nObjectCnt = 0;
 	}
-	else
+	else 
 	{
-        nObjectCnt = 0;
-        obTimeOut = setTimeout("ShowDefaultRotate()",60000);
-	}		
+		document.getElementById("background").style.backgroundImage = "url(" + ObjectArray[2] + ")";
+		nObjectCnt = 1;
+	}
+
+	obTimeOut = setTimeout("ShowDefaultRotate()",20000);  // 20초후에 자기자신을 호출 		
 }
 
 function startAnimation()
@@ -31,4 +31,4 @@ function startAnimation()
       obTimeOut = window.setTimeout(ShowDefaultRotate,100); // 윈도우 로드 후 0.1초 후에 반복함수를 호출합니다.
 }
 
- window.onload = startAnimation; // 윈도우 로드시 이미지 변환함수 실행
+ window.onload = ShowDefaultRotate; // 윈도우 로드시 이미지 변환함수 실행

@@ -1,14 +1,14 @@
-const circle = document.querySelector(".circle");
+// const circle = document.querySelector(".circle");
 
-document.addEventListener("mousemove", (e) => { // mousemove이벤트를 이용해 움
-    const mouseX = e.clientX;
+// document.addEventListener("mousemove", (e) => { // mousemove이벤트를 이용해 움
+//     const mouseX = e.clientX;
 
-    const mouseY = e.clientY;
+//     const mouseY = e.clientY;
 
-    circle.style.left = mouseX + 'px';
+//     circle.style.left = mouseX + 'px';
 
-    circle.style.top = mouseY + 'px';
-});
+//     circle.style.top = mouseY + 'px';
+// });
 
 function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));

@@ -48,7 +48,7 @@ nav {
     /* height: 50px;
     line-height: 50px; */
     display: inline-block;
-    font-size: 23px;
+    font-size: 1.5rem;
     color: white;
 
     padding: 0px;
@@ -59,6 +59,8 @@ nav {
 
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
     cursor:pointer;
+
+    transition: all 0.5s;
 }
 
 .mainmenu a:hover {
@@ -75,7 +77,7 @@ nav {
 .textzone {
     /*padding-left: 2rem;
     padding-top: 300px;*/
-    width: 50vw;
+    /* width: 50vw; */
     height: 50vh;
     box-sizing: border-box;
     color: white;

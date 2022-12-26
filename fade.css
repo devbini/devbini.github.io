@@ -1,8 +1,8 @@
 .divpage {
     z-index: 10;
     background-color: #3b8686;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     position: absolute;
 
     transition: all 0.5s linear;
@@ -126,7 +126,7 @@
             transform-origin: 50% 50%;
 
             top: 45%;
-            left: 45%;
+            left: 47.5%;
         }
 
         .loading-container:hover .loading {
@@ -156,6 +156,6 @@
             text-align: center;
             text-transform: uppercase;
             top: 45%;
-            left: 45%;
+            left: 47.5%;
             width: 100px;
         }
