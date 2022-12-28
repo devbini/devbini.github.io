@@ -10,6 +10,10 @@
 //     circle.style.top = mouseY + 'px';
 // });
 
+function openweb(url) {
+    window.open(url, '_blank');
+}
+
 function sleep(ms) {
     return new Promise((r) => setTimeout(r, ms));
 }
