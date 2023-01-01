@@ -27,7 +27,7 @@
                 <!-- margin-top: 100%;"> -->
                 <a onclick="move(1)">About</a>
                 <a onclick="move(2)">Project</a>
-                <a onclick="move(3)">Contect</a>
+                <!-- <a onclick="move(3)">Contect</a> -->
             </ul>
         </div>
     </nav>
@@ -46,11 +46,11 @@
                 <div id="loading-text">loading</div>
             </div>
         </div>
-        <div class="sections HidePage" id="MainPage">
+        <div class="sections" id="MainPage">
             <div class="textzone" style="width: 50vw; position: absolute; font-size: 50px; vertical-align: middle;">
                 <p style="margin-top: 15%;">
                     <span>안녕하세요,</span><br>
-                    <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
+                    <span>저는 <span class="hovermaintext">소프트웨어</span>를 개발하는</span><br>
                     <span>김찬빈입니다.</span>
                 </p>
                 <p style="font-size: 20px;">
@@ -61,7 +61,7 @@
 
 
         <!-- About 페이지 요소입니다. -->
-        <div class="sections ZUP" id="About" style="width: 100%; height: 85%;">
+        <div class="sections HidePage" id="About" style="width: 100%; height: 85%;">
 
             <!-- 왼쪽 단락 -->
             <div style="background-color: #A7D071; border-color: #64bf40; border-style: solid; border-width: 4px; border-radius: 20px; 
@@ -119,26 +119,31 @@
             <!-- 히스토리 -->
             <div style="background-color: #A7D071; border-color: #64bf40; border-style: solid; border-width: 4px; border-radius: 20px; 
             position: absolute; height: 20%; width: 47.4vw; top: 20%; left: 28.5%; text-align: center;">
-                <p style="font-size: 30px; margin-top: 1.25%; margin-bottom: 1.6%; color: white; text-shadow: 1.5px 1.5px 1.5px black;">History</p>
+                <p
+                    style="font-size: 30px; margin-top: 1.25%; margin-bottom: 1.6%; color: white; text-shadow: 1.5px 1.5px 1.5px black;">
+                    History</p>
 
                 <div onclick="openweb('https://swjb.hs.kr/')" style="cursor:pointer; transform: translateX(10px); position: relative; background-color: #b3ce91; border-radius: 5px; width: 350px; height: 80px; 
                 box-shadow: 1px 1px 5px 4px #879b6f; text-align: center; display: table-cell; vertical-align: middle;">
                     <span
-                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🎓 2020.03 🎓
+                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🎓
+                        2020.03 🎓
                         <br>수원정보과학고등학교 디지털네트워크과 졸업</span>
                 </div>
 
                 <div onclick="openweb('http://coretec.co.kr/')" style="cursor:pointer; transform: translateX(30px); position: relative; background-color: #b3ce91; border-radius: 5px; width: 250px; height: 80px; 
                 box-shadow: 1px 1px 5px 4px #879b6f; text-align: center; display: table-cell; vertical-align: middle;">
                     <span
-                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🏢 2019.10 🏢
+                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🏢
+                        2019.10 🏢
                         <br>(주)코아텍 입사</span>
                 </div>
 
                 <div onclick="openweb('https://www.dongguk.edu/main')" style="cursor:pointer; transform: translateX(50px); position: relative; background-color: #b3ce91; border-radius: 5px; width: 250px; height: 80px; 
                 box-shadow: 1px 1px 5px 4px #879b6f; text-align: center; display: table-cell; vertical-align: middle;">
                     <span
-                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🎓 2023.03 🎓
+                        style="font-size: 18px; line-height: 24px; color: white; text-shadow: 1.5px 1.5px 1.5px black;">🎓
+                        2023.03 🎓
                         <br><span style="color: orange;">동국대학교</span> 융합보안학과 입학</span>
                 </div>
             </div>
@@ -146,7 +151,9 @@
             <!-- 자격증 -->
             <div style="background-color: #A7D071; border-color: #64bf40; border-style: solid; border-width: 4px; border-radius: 20px; 
             position: absolute; height: 20%; width: 20vw; top: 20%; left: 77%; text-align: center;">
-                <p style="font-size: 30px; margin-top: 3%; margin-bottom: 3%; color: white; text-shadow: 1.5px 1.5px 1.5px black;">License</p>
+                <p
+                    style="font-size: 30px; margin-top: 3%; margin-bottom: 3%; color: white; text-shadow: 1.5px 1.5px 1.5px black;">
+                    License</p>
 
                 <div style="transform: translate(25px); position: relative; background-color: #b3ce91; border-radius: 5px; width: 150px; height: 25px; 
                 box-shadow: 1px 1px 5px 4px #879b6f; text-align: center;">
@@ -251,16 +258,80 @@ box-shadow: 1px 1px 5px 4px #879b6f; display: table-cell; vertical-align: middle
 
         <!-- Project 페이지 요소입니다. -->
         <div class="sections HidePage" id="Project">
+            <div style="position: relative; transform: translate(5%, 25%);">
+                <div onclick="openport('0')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat; 
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#구리갈매 VR 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('1')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#밀양부북 VR 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('2')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#부산강동 VR 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('3')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#3기 신도시 홍보 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('4')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#봉성포천 건축 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('5')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#3D 경관심의 시뮬레이터
+                    </p>
+                </div>
 
-            <div class="textzone" style="position: absolute; font-size: 50px; vertical-align: middle;">
-                <p style="margin-top: 15%;">
-                    <span>Project,</span><br>
-                    <span>저는 <span style="color: aquamarine;">소프트웨어</span>를 개발하는</span><br>
-                    <span>김찬빈입니다.</span>
-                </p>
-                <p style="font-size: 20px;">
-                    <span>Software Developer | Unrael Engineer</span>
-                </p>
+                <br>
+
+                <div onclick="openport('6')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#측량 VR 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('7')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#2022 디지털트윈 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('8')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat; 
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#항만 VR 안전점검 시뮬레이터
+                    </p>
+                </div>
+                <div onclick="openport('9')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#QR 생성기
+                    </p>
+                </div>
+                <div onclick="openport('10')" style="display: inline-block; margin: 10px; text-align: center; height: 270px; width: 240;">
+                    <img src="./Images/backup.png" style="height: 270px; width: 240;">
+                    <p style="font-size: 20px; color: wheat;
+                text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;">#환경부 프로그램
+                    </p>
+                </div>
+            </div>
+
+            <div style="position: relative; transform: translate(10%, 50%);">
+
             </div>
         </div>
 
@@ -286,6 +357,11 @@ box-shadow: 1px 1px 5px 4px #879b6f; display: table-cell; vertical-align: middle
                 </p>
             </div>
         </div>
+    </div>
+
+    <div id="ProjectBlack" class="UnHideBlack" style="transform: translateY(-100%); position: absolute; background-color: black; z-index: 10000; width: 100%; height: 100%;
+    transition: all 0.5s;" onclick="removeport()"> 
+
     </div>
     <!-- J쿼리 입력 및 스크립트 호출 부분입니다 -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>

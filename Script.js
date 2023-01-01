@@ -188,3 +188,15 @@ function move(type) {
         requestAnimationFrame(petalCreator);
     };
 }(jQuery));
+
+
+function openport(type)
+{
+    document.getElementById("ProjectBlack").classList.add("HideBlack");
+    // alert(type);
+}
+
+function removeport()
+{
+    document.getElementById("ProjectBlack").classList.remove("HideBlack");
+}
