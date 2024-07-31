@@ -1,95 +1,63 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import Image from 'next/image';
+import styles from './page.module.css';
+import photo from './Materials/photo.jpeg';
+
+import Gmail_Icon from './Materials/gmail.png';
+import Github_Icon from './Materials/github.png';
+import Tistory_Icon from './Materials/tistory.png';
 
 export default function Home() {
+  function openweb(url = "") {
+    window.location.href = url;
+  }
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
+    <div className={styles.background}>
+      <div className={styles.mainbox}>
+        <div className={styles.aboutbox}>
+          <h1>Chanbeen, Kim</h1>
+          <a>
+            <Image src={photo} alt="Profile photo" className={styles.about_image} onClick={() => openweb("https://github.com/devbini")}/>
           </a>
+          <h2>개발하는 개발자?<br/>김찬빈입니다.</h2>
+          <a>
+            <Image src={Gmail_Icon} alt="email:cong8685@naver.com" className={styles.tag_image} onClick={() => openweb("mailto:cong8685@naver.com")}/>
+          </a>
+
+          <a>
+            <Image src={Github_Icon} alt="github:devbini" className={styles.tag_image} onClick={() => openweb("https://github.com/devbini")}/>
+          </a>
+
+          <a>
+            <Image src={Tistory_Icon} alt="tistory:https://devbini.tistory.com/" className={styles.tag_image} onClick={() => openweb("https://devbini.tistory.com/")}/>
+          </a>
+
+          <div className={styles.about_infobox}>
+            <p>
+              안녕하세요~
+            </p>
+          </div>
+          <div className={styles.Line}></div>
+          <div>
+            <span>주요 기술</span>
+            <div className={styles.about_skillbox}>
+              <div className={styles.about_skillboxA}>C++</div>
+              <div className={styles.about_skillboxA}>JS</div>
+              <div className={styles.about_skillboxA}>Spring</div>
+            </div>
+          </div>
+          <div>
+            <span>기술 스택</span>
+            <div className={styles.about_skillbox}>
+              <div className={styles.about_skillboxB}>C++</div>
+              <div className={styles.about_skillboxB}>JS</div>
+              <div className={styles.about_skillboxB}>Spring</div>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
