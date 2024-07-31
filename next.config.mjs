@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    assetPrefix: process.env.NODE_ENV === 'production' ? 'https://devbini.github.io/devbini.github.io/' : '',
+    assetPrefix: process.env.NODE_ENV === 'production' ? 'https://github.com/devbini/devbini.github.io/tree/gh-pages' : '',
     trailingSlash: true,
     images: {
         unoptimized: true,
