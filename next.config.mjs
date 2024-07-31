@@ -1,8 +1,11 @@
 /** @type {import('next').NextConfig} */
+const prefix =
+    process.env.NODE_ENV === 'production' ? 'https://devbini.github.io/' : '';
+
 const nextConfig = {
     reactStrictMode: true,
     output: 'export',
-    assetPrefix: process.env.NODE_ENV === 'production' ? 'https://github.com/devbini/devbini.github.io/tree/gh-pages' : '',
+    assetPrefix: prefix,
     trailingSlash: true,
     images: {
         unoptimized: true,
