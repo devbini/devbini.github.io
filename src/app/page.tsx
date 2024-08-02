@@ -2,11 +2,15 @@
 
 import Image from 'next/image';
 import styles from './page.module.css';
+import education from './edu.module.css';
 import photo from './Materials/photo.jpeg';
 
 import Gmail_Icon from './Materials/gmail.png';
 import Github_Icon from './Materials/github.png';
 import Tistory_Icon from './Materials/tistory.png';
+import Univ_Icon from './Materials/Dongguk_logo.png';
+import Coretec_Icon from './Materials/Coretec_logo.png';
+
 import { useEffect, useState } from 'react';
 
 const TypingEffect = () => {
@@ -82,6 +86,7 @@ export default function Home() {
               </p>
             </div>
             <div className={styles.Line}></div>
+
             <div className={styles.about_skillroot}>
               <span>Front-End Stack</span>
               <div className={styles.about_skillbox}>
@@ -125,10 +130,45 @@ export default function Home() {
 
           </section>
 
-          <section>
-            <h1>Education.</h1>
-
-
+          <section className={education.educationbox}>
+            <h1>🚀 Career.</h1>
+            <div className={education.sectionbox}>
+              <div className={education.logobox}>
+                <Image className={education.logo} src={Univ_Icon} alt='Donnguk Univ.'></Image>
+              </div>
+              <div>
+                <h1>동국대학교 (서울)</h1><span className={education.noimportent}>2023. 03 ~ 2027. 03(재학중)</span><br />
+                <p>
+                  융합보안학과<br />
+                  전공학점 | 4.28 / 4.5<br />
+                  전체학점 | 4.19 / 4.5
+                </p>
+              </div>
+            </div>
+            <div className={education.sectionbox}>
+              <div className={education.logobox}>
+                <Image className={education.logo} src={Coretec_Icon} alt='Coretec'></Image>
+              </div>
+              <div>
+                <h1>(주)코아텍</h1><span className={education.noimportent}>2019. 10 ~ 재직중 (4년 11개월)</span><br />
+                <p>
+                  개발팀 주임<br />
+                  담당 | 앱&웹 서버/클라이언트 개발 및 DBMS관리
+                </p>
+                <div className={styles.about_skillbox}>
+                  <div className={styles.about_skillboxA}>JavaScript</div>
+                  <div className={styles.about_skillboxA}>React.js</div>
+                  <div className={styles.about_skillboxA}>HTML/CSS</div>
+                  <div className={styles.about_skillboxB}>JSP</div>
+                  <div className={styles.about_skillboxA}>Spring</div>
+                  <div className={styles.about_skillboxA}>MySQL</div>
+                  <div className={styles.about_skillboxA}>C++</div>
+                  <div className={styles.about_skillboxB}>C#</div>
+                  <div className={styles.about_skillboxB}>Unreal</div>
+                  <div className={styles.about_skillboxB}>Unity</div>
+                </div>
+              </div>
+            </div>
           </section>
 
         </div>
