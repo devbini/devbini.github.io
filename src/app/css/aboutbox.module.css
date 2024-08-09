@@ -1,0 +1,118 @@
+.Line {
+    background-color: black;
+    width: 100%;
+    height: 1px;
+    margin: 1.5vh 0px 0px 0px;
+}
+
+.mainbox {
+    padding: 1.5%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+}
+
+/* 좌측 */
+.aboutbox {
+    width: 30rem;
+    margin: 0% 2%;
+}
+
+.aboutbox .about_image {
+    width: 156px;
+    height: 156px;
+    display: flex;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.aboutbox h1 {
+    margin: 2vh 0px;
+}
+
+.aboutbox h2 {
+    margin: 14px 0px 0px 0px;
+}
+
+.profilebox {
+    /* line-height: 4vh; */
+}
+
+.aboutbox .connectionbox {
+    margin-top: 2vh;
+}
+
+/* 태그 이미지 (Gmail, github, blog 등) */
+.tag_image {
+    cursor: pointer;
+    width: 245px;
+    height: 28px;
+}
+
+.about_infobox {
+    margin: 10px 0px 5px 0px;
+    line-height: 2.5vh;
+}
+
+/* 스킬박스 */
+.about_skillroot {
+    margin: 1.5vh 0px;
+}
+
+.about_skillbox {
+    display: flex;
+    flex-flow: row;
+    gap: 3px;
+    font-size: 12px;
+    margin: 5px 0px 10px 0px;
+}
+
+.about_skillbox .about_skillboxA {
+    border-radius: 2px;
+    background-color: rgb(30 41 59);
+    padding: 3px 6px;
+    color: white;
+}
+
+.about_skillbox .about_skillboxB {
+    border-radius: 2px;
+    background-color: rgb(226 232 240);
+    padding: 3px 6px;
+}
+
+
+
+/* 우측 */
+.projectbox {
+    margin: 2%;
+    padding: 1.2%;
+    width: 55rem;
+    height: 87vh;
+    overflow-y: scroll;
+    border: solid #b8b8b85b 1px;
+    border-radius: 10px;
+}
+
+.projectbox::-webkit-scrollbar {
+    display: none;
+}
+
+.cursor {
+    display: inline-block;
+    width: 100px;
+    /* background-color: rgb(240, 219, 31); */
+    color: rgb(255, 237, 137) !important;
+    animation: blink 1s step-end infinite !important;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
