@@ -117,3 +117,29 @@ a {
     color-scheme: dark;
   }
 }
+
+/* 스킬박스 */
+.about_skillroot {
+  margin: 1.5vh 0px;
+}
+
+.about_skillbox {
+  display: flex;
+  flex-flow: row;
+  gap: 3px;
+  font-size: 12px;
+  margin: 5px 0px 10px 0px;
+}
+
+.about_skillbox .about_skillboxA {
+  border-radius: 2px;
+  background-color: rgb(30 41 59);
+  padding: 3px 6px;
+  color: white;
+}
+
+.about_skillbox .about_skillboxB {
+  border-radius: 2px;
+  background-color: rgb(226 232 240);
+  padding: 3px 6px;
+}
