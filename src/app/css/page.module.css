@@ -30,3 +30,26 @@
 .projectbox::-webkit-scrollbar {
   display: none;
 }
+
+/* 미디어 쿼리 */
+@media (max-width: 1280px) {
+  .mainbox {
+    padding: 1.5%;
+    height: 100vh;
+    overflow-y: auto;
+    display: block;
+  }
+
+  .projectbox {
+    margin: 2%;
+    padding: 1.2%;
+    width: 92vw;
+    height: 87vh;
+    border: solid #b8b8b85b 1px;
+    border-radius: 10px;
+  }
+
+  .projectbox::-webkit-scrollbar {
+    display: none;
+  }
+}
