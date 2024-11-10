@@ -1,0 +1,95 @@
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-flow: column;
+}
+
+.first {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.first img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px black;
+    margin: -20px 0px 20px 0px;
+    transition: all 0.2s;
+}
+
+.first img:hover {
+    box-shadow: 0px 0px 10px 0px rgb(255, 183, 0);
+}
+
+.Top {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.Bot {
+    font-size: 20px;
+    color: #3B4EF5;
+    font-weight: bold;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.startboxs {
+    display: flex;
+    flex-flow: row;
+    gap: 25px;
+    align-items: center;
+}
+
+.startbox {
+    border: solid black 1px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.297);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    gap: 15px;
+}
+
+
+.startbox:hover {
+    box-shadow: 0px 0px 10px 0px #3b4ef58e !important;
+    width: 220px;
+    height: 220px;
+}
+
+.startbox img {
+    width: 40%;
+    height: 40%;
+}
+
+/* mobile 규격 */
+@media screen and (max-width: 540px) {
+    .startbox {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .startbox:hover {
+        box-shadow: 0px 0px 10px 0px #3b4ef58e !important;
+        width: 43vw;
+        height: 43vw;
+    }
+}
