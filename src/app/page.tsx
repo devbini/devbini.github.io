@@ -11,7 +11,7 @@ import "../css/main.css";
 
 const HomePage: React.FC = () => (
   <>
-    <main>
+    <div className="main">
       <div className="first">
         <img src={ProfileImage.src} alt="증명사진"></img>
         <span className="Top">김 찬 빈</span>
@@ -32,7 +32,7 @@ const HomePage: React.FC = () => (
         </Link>
       </div>
       <Footer />
-    </main>
+    </div>
   </>
 );
 

@@ -15,4 +15,8 @@ body {
 
 footer {
   color: rgb(151, 151, 151);
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  font-weight: bold;
 }
