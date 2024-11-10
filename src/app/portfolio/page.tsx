@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { useRouter } from "next/navigation";
 import "../../css/portfolio.css";
 import Footer from "../../components/footer";
+import Image from "next/image";
 
 const PortFolioPage: React.FC = () => {
   const [pageNumber, setPageNumber] = useState(1);
@@ -74,7 +75,7 @@ const PortFolioPage: React.FC = () => {
               </div>
             )}
           </div>
-          <img
+          <Image
             src={`/portfolio/page-${pageNumber}.png`}
             alt={`Page ${pageNumber}`}
             className="portfolio-image"

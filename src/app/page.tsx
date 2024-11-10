@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Footer from "../components/footer";
+import Image from "next/image";
 
 import ProfileImage from "../images/profile.jpg";
 
@@ -13,20 +14,20 @@ const HomePage: React.FC = () => (
   <>
     <div className="main">
       <div className="first">
-        <img src={ProfileImage.src} alt="증명사진"></img>
+        <Image src={ProfileImage.src} alt="증명사진"></Image>
         <span className="Top">김 찬 빈</span>
         <span className="Bot">FullStack Develop, And DevOps</span>
       </div>
       <div className="startboxs">
         <Link href="/resume">
           <div className="startbox">
-            <img src={ResumeImage.src} alt="이력서"></img>
+            <Image src={ResumeImage.src} alt="이력서"></Image>
             <span>이력서</span>
           </div>
         </Link>
         <Link href="/portfolio">
           <div className="startbox">
-            <img src={PortFolioImage.src} alt="포트폴리오"></img>
+            <Image src={PortFolioImage.src} alt="포트폴리오"></Image>
             <span>포트폴리오</span>
           </div>
         </Link>
