@@ -14,20 +14,20 @@ const HomePage: React.FC = () => (
   <>
     <div className="main">
       <div className="first">
-        <Image src={ProfileImage.src} alt="증명사진"></Image>
+        <Image src={ProfileImage.src} alt="증명사진" width={1} height={1}></Image>
         <span className="Top">김 찬 빈</span>
         <span className="Bot">FullStack Develop, And DevOps</span>
       </div>
       <div className="startboxs">
         <Link href="/resume">
           <div className="startbox">
-            <Image src={ResumeImage.src} alt="이력서"></Image>
+            <Image src={ResumeImage.src} alt="이력서" width={1} height={1}></Image>
             <span>이력서</span>
           </div>
         </Link>
         <Link href="/portfolio">
           <div className="startbox">
-            <Image src={PortFolioImage.src} alt="포트폴리오"></Image>
+            <Image src={PortFolioImage.src} alt="포트폴리오" width={1} height={1}></Image>
             <span>포트폴리오</span>
           </div>
         </Link>

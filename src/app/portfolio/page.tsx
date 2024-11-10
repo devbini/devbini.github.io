@@ -79,6 +79,8 @@ const PortFolioPage: React.FC = () => {
             src={`/portfolio/page-${pageNumber}.png`}
             alt={`Page ${pageNumber}`}
             className="portfolio-image"
+            width={1}
+            height={1}
           />
         </div>
         <Footer />
