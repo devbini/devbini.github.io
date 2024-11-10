@@ -1,17 +1,38 @@
-import React from 'react';
-import Link from 'next/link';
-import Header from '../components/header';
-import Footer from '../components/footer';
+import React from "react";
+import Link from "next/link";
+import Footer from "../components/footer";
+
+import ProfileImage from "../images/profile.jpg";
+
+import ResumeImage from "../images/main_resume.png";
+import PortFolioImage from "../images/main_portfolio.png";
+
+import "../css/main.css";
 
 const HomePage: React.FC = () => (
   <>
-    <Header />
     <main>
-      <p>이력서 박스</p>
-      <Link href="/resume">이력서 보러가기</Link>
-      <Link href="/portfolio">포트폴리오 보러가기</Link>
+      <div className="first">
+        <img src={ProfileImage.src} alt="증명사진"></img>
+        <span className="Top">김 찬 빈</span>
+        <span className="Bot">FullStack Develop, And DevOps</span>
+      </div>
+      <div className="startboxs">
+        <Link href="/resume">
+          <div className="startbox">
+            <img src={ResumeImage.src} alt="이력서"></img>
+            <span>이력서</span>
+          </div>
+        </Link>
+        <Link href="/portfolio">
+          <div className="startbox">
+            <img src={PortFolioImage.src} alt="포트폴리오"></img>
+            <span>포트폴리오</span>
+          </div>
+        </Link>
+      </div>
+      <Footer />
     </main>
-    <Footer />
   </>
 );
 
