@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const prefix =
-    process.env.NODE_ENV === 'production' ? 'https://devbini.github.io/' : '';
+    process.env.NODE_ENV === '';
 
 const nextConfig = {
     reactStrictMode: true,
