@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
-const repoName = "devbini.github.io";
+const repoName = "";
 
 const nextConfig: NextConfig = {
   output: "export",
